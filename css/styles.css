@@ -132,7 +132,9 @@ body {
 .navigation,
 .navigation-list,
 .navigation-contacts,
-.navigation-contacts-item {
+.navigation-contacts-item,
+.navigation-contacts-mail,
+.navigation-contacts-phone {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -163,41 +165,31 @@ body {
     color: var(--text-color);
 }
 /* электронка и телефон фирмы в шапке */
+
 .navigation-contacts-mail,
 .navigation-contacts-phone {
     color: var(--navigation-contacts-color);
 }
-
+.envelope-icon,
+.mobile-icon {
+    margin-right: 10px;
+}
 .navigation-list-link:hover,
 .navigation-list-link:focus {
     color: var(--accent-color);
 }
-.navigation-contacts-mail:hover,
-.navigation-contacts-mail:focus {
+
+.navigation-contacts-mail:focus,
+.navigation-contacts-mail:hover {
     color: var(--accent-color);
 }
 .navigation-contacts-phone:hover,
 .navigation-contacts-phone:focus {
     color: var(--accent-color);
 }
-.navigation-contacts-item::before {
-    display: flex;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #FFFFFF;
- }   
-.icon-envelope::before {
-    background-image: url("../images/sprite.svg#icon-icon-smartphone");
- 
-}
 
-/*.icon-envelope::before {
-    background-image: url("../images/icon-envelope.svg");
-}*/
+
+
 /*===========/HEADER==============*/
 
 /*======Фильтр в главном разделе=====*/
@@ -520,7 +512,7 @@ body {
     justify-content: flex-start;
     padding-left: 30px;
 }
-.social-icons,
+.social-icons, 
 .social-icon {
     display: flex;
     flex-direction: row;
@@ -529,6 +521,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+}
+.social-icons:last-child {
+    margin-right: 0px;
+}
+.social-icon:last-child {
+    margin-right: 0px;
 }
 .social-icons:hover,
 .social-icons:focus {
