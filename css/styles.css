@@ -262,6 +262,12 @@ body {
 .examples-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
+.examples-list-item:hover,
+.examples-list-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .item-down-part {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -546,23 +552,26 @@ body {
 .our-clients {
     margin-bottom: 50px;
 }
-.our-clients-list {
+.our-clients-list,
+.our-clients-item {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     
 }
-.our-clients-item {
+.icon {
     display: flex;
+    
     padding: 15px 32px;
     width: 170px;
     height: 92px;
     border: 1px solid var(--our-client-border-color);
     border-radius: 4px;
 }
-.our-clients-item:hover,
-.our-clients-item:focus {
+.icon:hover,
+.icon:focus {
     border: 1px solid #2196F3;
+    fill: var(--accent-color);
 }   
 .our-clients-item:not(:last-child) {
     margin-right: 30px;
@@ -570,6 +579,13 @@ body {
 .clients-icon {
     display: flex;
     justify-content: center;
+}
+.icon {
+    fill: #AFB1B8;
+}
+.icon:hover,
+.icon:focus {
+    fill: var(--accent-color);
 }
 /*=======/Наши клиенты==========*/
 /* Не забывайте подсвечивать синим цветом ссылочку на страницу,
