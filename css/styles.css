@@ -16,6 +16,7 @@
     --hero-bg-color: #C4C4C4;
     --hero-overlay-color: rgba(47, 48, 58, 0.4);
     --our-client-border-color: #AFB1B8;
+    --social-icon-bg-color: rgba(255, 255, 255, 0.1);
 }
 /* убираем маркировку списка */
 .navigation-list,
@@ -25,7 +26,8 @@
 .address-list,
 .our-advantages-list,
 .our-occupation-list,
-.our-team-list {
+.our-team-list,
+.social-icons-list {
     list-style: none;
 }
 /* убираем подчеркивание текста */
@@ -282,7 +284,13 @@ body {
 /*======/Варианты портфолио=====*/
 
 /*==========FOOTER============*/
-
+.down {
+    display: flex;
+    flex-direction: row;
+}
+.bottom-left-side {
+    margin-right: 70px;
+}
 .logo-white {
     color: var(--top-color);
 }
@@ -326,6 +334,31 @@ body {
 .address-list-phone:hover,
 .address-list-phone:focus {
     color: var(--accent-color);
+}
+/* раздел с иконками соцсетей */
+.social-icons-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+.bottom-social-icon-title {
+    display: flex;
+    color: var(--top-color);
+    margin-bottom: 30px;
+}
+.social-icons-list-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.social-icon {
+    border-radius: 50%;
+    background-color: var(--social-icon-bg-color);
+}
+.social-icon:hover,
+.social-icon:focus {
+    background-color: var(--accent-color);
 }
 /*==========/FOOTER============*/
 
@@ -392,13 +425,18 @@ body {
 .our-advantages-item:not(:last-child) {
     margin-right: 30px;
 }
-.our-advantages-title {
-    margin-bottom: 10px;
+.our-advantages-title,
+.bottom-social-icon-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.our-advantages-title{
+    margin-bottom: 10px;
+}
+.our-advantages-title {
     color: var(--text-color);
 }
 .our-advantages-text {
@@ -409,7 +447,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--navigation-contacts-color);
 }
-
 .our-advantages-item-area {
     display: flex;
     justify-content: center;
@@ -483,7 +520,8 @@ body {
     justify-content: flex-start;
     padding-left: 30px;
 }
-.social-icons {
+.social-icons,
+.social-icon {
     display: flex;
     flex-direction: row;
     width: 44px;
