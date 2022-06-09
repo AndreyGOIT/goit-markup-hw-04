@@ -174,7 +174,7 @@ body {
 }
 .envelope-icon,
 .mobile-icon {
-    fill: #757575;
+    fill: var(--navigation-contacts-color);
     height: 16px;
     margin-right: 10px;
 }
@@ -380,7 +380,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--social-icon-bg-color);
 }
 
 .social-icons-link-.bottom,
@@ -618,11 +618,11 @@ body {
 }
 .clients-link:hover,
 .clients-link:focus {
-    border-color: #2196F3;
+    border-color: var(--accent-color);
 }
 .clients-link:hover .icon,
 .clients-link:focus .icon {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 .icon:hover,
 .icon:focus {
