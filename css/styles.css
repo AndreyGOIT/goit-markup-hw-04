@@ -169,7 +169,7 @@ body {
 
 .navigation-contacts-mail,
 .navigation-contacts-phone {
-    height: 12px;
+    height: 16px;
     color: var(--navigation-contacts-color);
 }
 .envelope-icon,
@@ -228,7 +228,7 @@ body {
     background: var(--our-team-background-color);
     border-radius: 4px;
     cursor: pointer;
-    padding: 6px 20px;
+    padding: 6px 22px;
     color: var(--text-color);
 }
 .filter-btn-text:hover,
@@ -354,13 +354,10 @@ body {
 .social-icons-section {
     display: flex;
     flex-direction: column;
+    padding-top: 12px;
 }
 .social-icons-list-bottom {
     display: flex;
-}
-.social-icons-section {
-    display: flex;
-    padding-top: 12px;
 }
 .bottom-social-icon-title {
     display: flex;
@@ -372,7 +369,9 @@ body {
     height: 44px;
     margin-right: 10px;
 }
-
+.social-icons-bottom:last-child {
+    margin-right: 0px;
+}
 .social-icons-link-bottom {
     display: flex;
     justify-content: center;
@@ -382,31 +381,19 @@ body {
     border-radius: 50%;
     background-color: var(--social-icon-bg-color);
 }
-
-.social-icons-link-.bottom,
-.social-icons-link-.bottom:focus {
-    background-color: var(--accent-color);
-}
-
 .soc-med-icon-bottom {
     fill: var(--top-color);
 }
-
 .social-icons-link-bottom:hover,
 .social-icons-link-bottom:focus {
     background-color: var(--accent-color);
 }
-
-.social-icons-bottom:last-child {
-    margin-right: 0px;
-}
-
 /*==========/FOOTER============*/
 
 /*============HERO=============*/
 .hero {
     background-size: auto auto;
-    max-width: 100%;
+    max-width: 1600px;
     background-color: var(--hero-bg-color);
     background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url("../images/img-hero.jpg");
     background-position: center;
@@ -531,7 +518,7 @@ body {
     margin-right: 30px;
 }
 .our-team-item {
-    padding-bottom: 30px;
+    
     background: var(--top-color);
     /* material shadow v1 */
     /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -541,6 +528,7 @@ body {
 }
 .our-team-text-block {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .our-team-title {
     margin-bottom: 10px;
@@ -584,16 +572,16 @@ body {
     background-color: var(--accent-color);
 }
 .soc-med-icon {
-    fill: var(--navigation-contacts-color);
+    fill: var(--our-client-border-color);
 }
 .social-icons-link:hover .soc-med-icon,
 .social-icons-link:focus .soc-med-icon {
     fill: var(--top-color);
 }
-.social-icons:last-child {
-    margin-right: 0px;
+.social-icons {
+    margin-right: 10px;
 }
-.social-icon:last-child {
+.social-icons:last-child {
     margin-right: 0px;
 }
 
@@ -603,8 +591,7 @@ body {
 .our-clients {
     margin-bottom: 50px;
 }
-.our-clients-list,
-.our-clients-item {
+.our-clients-list {
     display: flex;
 }
 .our-clients-item {
@@ -624,10 +611,6 @@ body {
 .clients-link:focus .icon {
     fill: var(--accent-color);
 }
-.icon:hover,
-.icon:focus {
-    fill: var(--accent-color);
-}   
 .our-clients-item:not(:last-child) {
     margin-right: 30px;
 }
